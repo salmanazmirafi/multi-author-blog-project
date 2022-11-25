@@ -6,6 +6,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/article/:currentPage/" element={<Home />} />
+        <Route path="/article/detail/:slug" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
