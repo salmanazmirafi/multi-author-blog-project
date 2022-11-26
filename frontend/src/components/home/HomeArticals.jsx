@@ -17,7 +17,9 @@ const HomeArticals = () => {
           <div className="col-8">
             <div className="home-artical-details">
               <div className="title">
-                <Link to="/">Lorem ipsumn publishing and graphic design,</Link>
+                <Link to="/article/detail/salman">
+                  Lorem ipsumn publishing and graphic design,
+                </Link>
                 <div className="name-time">
                   <span>
                     <Link>Salman Azmi Rafi</Link>
@@ -34,7 +36,9 @@ const HomeArticals = () => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <button className="read-more-btn">Read More</button>
+                  <button className="read-more-btn">
+                    <Link to="/article/detail/salman">Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -55,7 +59,9 @@ const HomeArticals = () => {
           <div className="col-8">
             <div className="home-artical-details">
               <div className="title">
-                <Link to="/">Lorem ipsumn publishing and graphic design,</Link>
+                <Link to="/article/detail/salman">
+                  Lorem ipsumn publishing and graphic design,
+                </Link>
                 <div className="name-time">
                   <span>
                     <Link>Salman Azmi Rafi</Link>
@@ -72,7 +78,9 @@ const HomeArticals = () => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <button className="read-more-btn">Read More</button>
+                  <button className="read-more-btn">
+                    <Link to="/article/detail/salman">Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -93,7 +101,9 @@ const HomeArticals = () => {
           <div className="col-8">
             <div className="home-artical-details">
               <div className="title">
-                <Link to="/">Lorem ipsumn publishing and graphic design,</Link>
+                <Link to="/article/detail/salman">
+                  Lorem ipsumn publishing and graphic design,
+                </Link>
                 <div className="name-time">
                   <span>
                     <Link>Salman Azmi Rafi</Link>
@@ -110,7 +120,9 @@ const HomeArticals = () => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <button className="read-more-btn">Read More</button>
+                  <button className="read-more-btn">
+                    <Link to="/article/detail/salman">Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -131,7 +143,9 @@ const HomeArticals = () => {
           <div className="col-8">
             <div className="home-artical-details">
               <div className="title">
-                <Link to="/">Lorem ipsumn publishing and graphic design,</Link>
+                <Link to="/article/detail/salman">
+                  Lorem ipsumn publishing and graphic design,
+                </Link>
                 <div className="name-time">
                   <span>
                     <Link>Salman Azmi Rafi</Link>
@@ -148,7 +162,9 @@ const HomeArticals = () => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <button className="read-more-btn">Read More</button>
+                  <button className="read-more-btn">
+                    <Link to="/article/detail/salman">Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>
@@ -169,7 +185,9 @@ const HomeArticals = () => {
           <div className="col-8">
             <div className="home-artical-details">
               <div className="title">
-                <Link to="/">Lorem ipsumn publishing and graphic design,</Link>
+                <Link to="/article/detail/salman">
+                  Lorem ipsumn publishing and graphic design,
+                </Link>
                 <div className="name-time">
                   <span>
                     <Link>Salman Azmi Rafi</Link>
@@ -186,7 +204,9 @@ const HomeArticals = () => {
                   </p>
                 </div>
                 <div className="read-more">
-                  <button className="read-more-btn">Read More</button>
+                  <button className="read-more-btn">
+                    <Link to="/article/detail/salman">Read More</Link>
+                  </button>
                 </div>
               </div>
             </div>

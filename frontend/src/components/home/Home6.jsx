@@ -1,19 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-
-import HomeArticals from "./HomeArticals";
 import Navbar from "./Navbar";
 import PopularAr from "./PopularAr";
+import Search from "./Search";
 
-function Home({ history }) {
-  const [serchV, setSerchV] = useState("");
-  const HandaleSearch = (e) => {
-    e.preventDefault();
-    history(`article/search/${serchV}`);
-  };
+function Home6() {
   return (
     <div className="home">
       <Navbar />
@@ -21,7 +13,7 @@ function Home({ history }) {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <HomeArticals />
+              <Search />
             </div>
             <div className="col-4">
               <div className="search-category-tag">
@@ -29,16 +21,13 @@ function Home({ history }) {
                   <h2>Search</h2>
                   <div className="form-group">
                     <input
-                      onChange={(e) => setSerchV(e.target.value)}
                       type="text"
                       placeholder="Search"
                       className="form-control"
                     />
                   </div>
                   <div className="form-group">
-                    <button onClick={HandaleSearch} className="btn btn-block">
-                      Search
-                    </button>
+                    <button className="btn btn-block">Search</button>
                   </div>
                 </div>
                 <div className="popular-artical">
@@ -137,9 +126,8 @@ function Home({ history }) {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Home6;

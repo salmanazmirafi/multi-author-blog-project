@@ -1,19 +1,11 @@
 import React from "react";
-import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Footer from "./Footer";
-
-import HomeArticals from "./HomeArticals";
 import Navbar from "./Navbar";
 import PopularAr from "./PopularAr";
+import Tag from "./Tag";
 
-function Home({ history }) {
-  const [serchV, setSerchV] = useState("");
-  const HandaleSearch = (e) => {
-    e.preventDefault();
-    history(`article/search/${serchV}`);
-  };
+function Home5() {
   return (
     <div className="home">
       <Navbar />
@@ -21,7 +13,7 @@ function Home({ history }) {
         <div className="container">
           <div className="row">
             <div className="col-8">
-              <HomeArticals />
+              <Tag />
             </div>
             <div className="col-4">
               <div className="search-category-tag">
@@ -29,16 +21,13 @@ function Home({ history }) {
                   <h2>Search</h2>
                   <div className="form-group">
                     <input
-                      onChange={(e) => setSerchV(e.target.value)}
                       type="text"
                       placeholder="Search"
                       className="form-control"
                     />
                   </div>
                   <div className="form-group">
-                    <button onClick={HandaleSearch} className="btn btn-block">
-                      Search
-                    </button>
+                    <button className="btn btn-block">Search</button>
                   </div>
                 </div>
                 <div className="popular-artical">
@@ -77,28 +66,28 @@ function Home({ history }) {
                     <div className="cate-item">
                       <li>
                         <FaChevronRight />
-                        <Link to="/article/category/category">Natural</Link>
+                        <Link>Natural</Link>
                       </li>
                       <span>(9)</span>
                     </div>
                     <div className="cate-item">
                       <li>
                         <FaChevronRight />
-                        <Link to="/article/category/category">Photography</Link>
+                        <Link>Photography</Link>
                       </li>
                       <span>(6)</span>
                     </div>
                     <div className="cate-item">
                       <li>
                         <FaChevronRight />
-                        <Link to="/article/category/category">Rainbow</Link>
+                        <Link>Rainbow</Link>
                       </li>
                       <span>(4)</span>
                     </div>
                     <div className="cate-item">
                       <li>
                         <FaChevronRight />
-                        <Link to="/article/category/category">Skies </Link>
+                        <Link>Skies </Link>
                       </li>
                       <span>(7)</span>
                     </div>
@@ -109,27 +98,13 @@ function Home({ history }) {
                     <h3>Tag</h3>
                   </div>
                   <ul>
-                    <li>
-                      <Link to="/article/tag/tag">Dayime</Link>
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Flowers</Link>
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Petaled</Link>{" "}
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Purple</Link>{" "}
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Natural</Link>
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Photography</Link>{" "}
-                    </li>
-                    <li>
-                      <Link to="/article/tag/tag">Perspective</Link>{" "}
-                    </li>
+                    <li>Dayime</li>
+                    <li>Flowers</li>
+                    <li>Petaled </li>
+                    <li>Purple </li>
+                    <li>Natural</li>
+                    <li>Photography </li>
+                    <li>Perspective </li>
                   </ul>
                 </div>
               </div>
@@ -137,9 +112,8 @@ function Home({ history }) {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
 
-export default Home;
+export default Home5;
